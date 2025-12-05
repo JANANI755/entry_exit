@@ -1,0 +1,79 @@
+[
+  {
+    "id": 1,
+    "type": "entry",
+    "timestamp": "2025-12-04T13:45:35.809166",
+    "time_display": "2025-12-04 13:45:35"
+  },
+  {
+    "id": 2,
+    "type": "entry",
+    "timestamp": "2025-12-04T13:45:41.229563",
+    "time_display": "2025-12-04 13:45:41"
+  },
+  {
+    "id": 3,
+    "type": "entry",
+    "timestamp": "2025-12-04T13:45:47.740581",
+    "time_display": "2025-12-04 13:45:47"
+  },
+  {
+    "id": 4,
+    "type": "exit",
+    "timestamp": "2025-12-04T13:45:50.158077",
+    "time_display": "2025-12-04 13:45:50"
+  },
+  {
+    "id": 5,
+    "type": "entry",
+    "person_name": "janani",
+    "timestamp": "2025-12-04T13:49:16.657389",
+    "time_display": "2025-12-04 13:49:16"
+  },
+  {
+    "id": 6,
+    "type": "entry",
+    "person_name": "sarathbabu",
+    "timestamp": "2025-12-04T14:24:24.954057",
+    "time_display": "2025-12-04 14:24:24"
+  },
+  {
+    "id": 7,
+    "type": "exit",
+    "person_name": "hemalatha",
+    "timestamp": "2025-12-04T14:26:25.052732",
+    "time_display": "2025-12-04 14:26:25"
+  },
+  {
+    "id": 8,
+    "type": "exit",
+    "person_name": "harini",
+    "timestamp": "2025-12-04T14:26:33.802628",
+    "time_display": "2025-12-04 14:26:33"
+  },
+  {
+    "id": 9,
+    "type": "entry",
+    "person_name": "harini",
+    "timestamp": "2025-12-04T14:26:46.026133",
+    "time_display": "2025-12-04 14:26:46"
+  },
+  {
+    "id": 10,
+    "type": "exit",
+    "person_name": "sarathbabu",
+    "place_from": "home",
+    "place_to": "tea shop",
+    "timestamp": "2025-12-04T14:30:42.783326",
+    "time_display": "2025-12-04 14:30:42"
+  },
+  {
+    "id": 11,
+    "type": "exit",
+    "person_name": "hemalatha",
+    "place_from": "home",
+    "place_to": "shop",
+    "timestamp": "2025-12-04T14:40:45.170161",
+    "time_display": "2025-12-04 14:40:45"
+  }
+]

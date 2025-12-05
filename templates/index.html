@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entry/Exit Tracker</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📍 நுழைவு/வெளியேறு பதிவாளர்</h1>
+            <p class="subtitle">உங்கள் நுழைவு மற்றும் வெளியேறு நேரங்களை பதிவு செய்யுங்கள்</p>
+        </header>
+
+        <div class="main-content">
+            <section class="person-section">
+                <div class="form-group family-group">
+                    <button id="familyToggle" class="btn btn-small">Add Family</button>
+                    <div id="familyList" class="family-list hidden">
+                        <button class="family-btn">sarathbabu</button>
+                        <button class="family-btn">hemalatha</button>
+                        <button class="family-btn">janani</button>
+                        <button class="family-btn">harini</button>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="personName">Person Name:</label>
+                    <input type="text" id="personName" placeholder="Enter your name" class="input-field">
+                </div>
+                <!-- Place toggle: bilingual label/button -->
+                <div class="form-group place-group">
+                    <button id="placeToggle" class="btn btn-small">Place / இடம்</button>
+                    <div id="placeForm" class="place-form hidden">
+                        <div class="form-row">
+                            <label for="placeFrom">From / இருந்து</label>
+                            <input type="text" id="placeFrom" class="input-field" placeholder="Where you came from">
+                        </div>
+                        <div class="form-row">
+                            <label for="placeTo">To / செல்ல</label>
+                            <input type="text" id="placeTo" class="input-field" placeholder="Where you are going">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="buttons-section">
+                <button id="entryBtn" class="btn btn-entry">
+                    <span class="icon">🔓</span>
+                    <span>நுழைவு</span>
+                </button>
+                <button id="exitBtn" class="btn btn-exit">
+                    <span class="icon">🔒</span>
+                    <span>வெளியேறு</span>
+                </button>
+            </section>
+
+            <section class="stats-section">
+                <div class="stat-card">
+                    <div class="stat-label">மொத்த நுழைவுகள்</div>
+                    <div class="stat-value" id="totalEntries">0</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">மொத்த வெளியேறல்கள்</div>
+                    <div class="stat-value" id="totalExits">0</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">மொத்த மணி நேரம்</div>
+                    <div class="stat-value" id="totalHours">0h</div>
+                </div>
+            </section>
+
+            <section class="entries-section">
+                <div class="section-header">
+                    <h2>சமீபத்திய பதிவுகள்</h2>
+                    <button id="clearBtn" class="btn btn-small btn-danger">அனைத்தையும் அழிக்கவும்</button>
+                </div>
+                <div class="entries-list" id="entriesList">
+                    <p class="empty-message">பதிவுகள் இல்லை. பதிவு செய்ய "நுழைவு" அல்லது "வெளியேறு" தட்டவும்!</p>
+                </div>
+            </section>
+        </div>
+
+        <footer>
+            <p>Entry/Exit Tracker v1.0</p>
+        </footer>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
